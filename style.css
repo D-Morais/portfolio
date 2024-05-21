@@ -173,15 +173,65 @@ footer{
     opacity: 0.8;
 }
 
-#home h1{
-    margin-left: 40%;
-    z-index: 999;
-}
-
 /* Sobre */
 .about-container {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.about-info {
+    margin-left: 320px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.info {
+    background-color: #FFF;
+    width: 75%;
+    height: 400px;
+    margin-left: 320px;
+    margin-right: 30px;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.img-info {
+    height: 350px;
+    width: 250px;
+}
+
+.me-info {
+    color: var(--cor-texto-secundaria);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 20px;
+    text-indent: 10px;
+    line-height: 1.5; /* Define a altura da linha */    
+}
+
+.me-info h3 {
+    color: var(--cor-texto-secundaria);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.person {
+    columns: 2;
+    margin: 20px 0;
+}
+
+.quality {
+    margin-top: 20px;
+}
+
+.quality p {
+    margin-bottom: 5px;
 }
 
 /* Projetos */
@@ -216,7 +266,13 @@ footer{
     width: 280px;
     height: 200px;
     margin: 10px;
+    transition: transform 0.5s;
 }
+
+.proj img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
 
 .proj p {
     margin: 10px;
