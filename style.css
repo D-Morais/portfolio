@@ -368,7 +368,8 @@ footer{
 .order-contact {  
     height: 80vh;
     width: 70%;
-    margin-left: 350px;
+    margin-left: 320px;
+    margin-right: 20px;
     background-color: #FFF;  
     display: flex;
     align-items:center;
@@ -419,21 +420,24 @@ footer{
     gap: 5px;
 }
 
-@media screen and (max-width: 768px) {
+.order-contact iframe {
+    height: 80%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
     .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
- 
     }
-    .order-contact {  
-        margin-left: 0;  
+    .order-contact {
+        width: auto; 
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
         justify-content: center;
     }
-
     .contact-icon {
         display: flex;
         flex-direction: column;
@@ -443,5 +447,11 @@ footer{
     .order-contact iframe {
         height: 250px;
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order-contact {  
+        margin-left: 0;  
     }
 }
